@@ -1,0 +1,35 @@
+name: analytic_engineer_exercise
+version: 1.0.0
+config-version: 2
+
+profile: analytic_engineer_exercise
+
+target-path: target
+clean-targets:
+  - target
+  - dbt_modules
+
+model-paths:
+  - models
+macro-paths:
+  - macros
+seed-paths:
+  - seeds
+test-paths:
+  - tests
+snapshot-paths:
+  - snapshots
+analysis-paths:
+  - analyses
+
+models:
+  analytic_engineer_exercise:
+    staging:
+      +materialized: view
+    mart:
+      +materialized: table
+
+seeds:
+  analytic_engineer_exercise:
+    +schema: raw
+    +quote_columns: false

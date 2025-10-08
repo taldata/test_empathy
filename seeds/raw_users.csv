@@ -1,0 +1,9 @@
+user_id,email,country_code,signup_ts,marketing_channel,is_deleted,_ingested_at
+USR-001,alice@example.com,US,2025-05-15T09:00:00Z,Organic,false,2025-06-01T09:05:00Z
+USR-002,bob@example.com,GB,2025-05-16T11:30:00Z,Paid,false,2025-06-01T09:10:00Z
+USR-003,charlie@example.com,,2025-05-20T08:20:00Z,Referral,false,2025-06-01T09:12:00Z
+USR-004,danielle@example.com,CA,2025-05-22T14:45:00Z,Organic,false,2025-06-01T09:20:00Z
+USR-005,emily@example.com,IL,2025-05-25T10:05:00Z,Paid,false,2025-06-01T09:30:00Z
+USR-006,frank@example.com,DE,2025-05-28T07:40:00Z,Organic,true,2025-06-01T09:40:00Z
+USR-007,george@example.com,US,2025-06-02T07:00:00Z,Referral,false,2025-06-02T08:10:00Z
+USR-008,hannah@example.com,,2025-05-10T12:15:00Z,Affiliate,false,2025-06-01T09:50:00Z

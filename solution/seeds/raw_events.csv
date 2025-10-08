@@ -1,0 +1,14 @@
+event_id,event_ts,user_id,event_type,event_attributes,source_app,is_deleted,_ingested_at
+EVT-0001,2025-06-01T10:15:00Z,USR-001,Signup,"{""price"":null,""currency"":null}",web,false,2025-06-01T10:16:03Z
+EVT-0002,2025-06-01T10:20:12Z,USR-002,Login,"{""device"": "ios"}",ios,false,2025-06-01T10:21:10Z
+EVT-0003,2025-06-01T10:33:59Z,USR-003,Purchase,"{""price"": 12.5, ""currency"": "USD"}",android,false,2025-06-01T10:35:20Z
+EVT-0004,2025-06-01T10:45:05Z,USR-004,Logout,"{""duration"": 540}",web,false,2025-06-01T10:47:44Z
+EVT-0005,2025-06-01T10:47:05Z,USR-002,Login,"{""device"": "ios"}",ios,false,2025-06-01T10:50:02Z
+EVT-0006,2025-06-01T10:50:59Z,USR-003,Purchase,"{""price"": 9.99, ""currency"": "EUR"}",android,true,2025-06-01T10:55:20Z
+EVT-0007,2025-06-01T11:05:41Z,USR-005,Signup,"{""referrer"": "friend"}",web,false,2025-06-01T11:07:03Z
+EVT-0008,2025-05-31T22:10:00Z,USR-001,Purchase,"{""price"": 5.00, ""currency"": "USD"}",web,false,2025-06-01T11:20:15Z
+EVT-0009,2025-06-01T11:20:55Z,USR-003,LOGIN,"{""device"": "android"}",android,false,2025-06-01T11:22:44Z
+EVT-0010,2025-06-01T11:21:12Z,USR-006,Signup,"{""referrer"": "ad"}",ios,true,2025-06-01T11:23:10Z
+EVT-0011,2025-06-01T11:21:12Z,USR-006,Signup,"{""referrer"": "ad"}",ios,false,2025-06-01T11:26:10Z
+EVT-0012,2025-06-02T07:00:00Z,USR-007,Purchase,"{""price"": 100.0, ""currency"": "USD"}",web,false,2025-06-02T08:15:00Z
+EVT-0013,2025-06-02T07:00:00Z,USR-007,Purchase,"{""price"": 100.0, ""currency"": "USD"}",web,false,2025-06-02T08:20:00Z

@@ -1,0 +1,63 @@
+version: 2
+
+models:
+  - name: stg_events
+    description: "Cleaned staging layer for raw events."
+    columns:
+      - name: event_id
+        description: "Unique identifier for the event."
+        tests:
+          - not_null
+      - name: event_type
+        description: "Normalized event type constrained to business-approved values."
+        tests:
+          - accepted_values:
+              values: ['SIGNUP', 'LOGIN', 'PURCHASE', 'LOGOUT', 'UNKNOWN']
+  - name: stg_users
+    description: "Cleaned staging layer for raw users."
+    columns:
+      - name: user_id
+        description: "Unique identifier for the user."
+        tests:
+          - not_null
+  - name: dim_user
+    description: "Gold dimension table at user grain."
+    columns:
+      - name: user_sk
+        description: "Surrogate key generated for dimensional modeling."
+        tests:
+          - unique
+          - not_null
+      - name: user_id
+        description: "Business key maintained for lookups."
+        tests:
+          - not_null
+  - name: fact_events
+    description: "Gold fact table at event grain."
+    columns:
+      - name: event_id
+        description: "Business key for the fact record."
+        tests:
+          - unique
+          - not_null
+      - name: user_sk
+        description: "Foreign key referencing dim_user.user_sk."
+        tests:
+          - not_null
+
+seeds:
+  - name: raw_events
+    description: "Seed data backing raw.events source."
+    columns:
+      - name: event_id
+        tests:
+          - not_null
+      - name: user_id
+        tests:
+          - not_null
+  - name: raw_users
+    description: "Seed data backing raw.users source."
+    columns:
+      - name: user_id
+        tests:
+          - not_null

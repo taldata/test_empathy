@@ -1,0 +1,28 @@
+version: 2
+
+sources:
+  - name: raw
+    description: "Bronze layer landing tables loaded from CSV extracts."
+    database: {{ target.database }}
+    schema: raw
+    tables:
+      - name: events
+        description: "Raw event stream with semi-structured attributes and soft deletes."
+        columns:
+          - name: event_id
+            description: "Unique identifier for each emitted event."
+          - name: user_id
+            description: "Identifier tying the event back to the originating user."
+          - name: event_ts
+            description: "UTC timestamp when the event occurred."
+          - name: is_deleted
+            description: "Soft delete indicator coming from the source system."
+      - name: users
+        description: "Raw user dimension feed with marketing attributes and soft deletes."
+        columns:
+          - name: user_id
+            description: "Business key for the user record."
+          - name: signup_ts
+            description: "UTC timestamp when the user completed signup."
+          - name: is_deleted
+            description: "Soft delete indicator for the user record."
