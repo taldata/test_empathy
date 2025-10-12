@@ -9,7 +9,7 @@ You are joining as an analytic engineer and will model a small event dataset usi
   - Clean and conform column types.
   - Filter soft-deleted records via the shared macro.
   - Deduplicate events using a Snowflake `QUALIFY ROW_NUMBER() OVER (PARTITION BY ...)` window.
-- Gold models in `models/mart/`: `dim_user` and `fact_events` implementing the provided business logic.
+- Gold models in `models/mart/`: `dim_user` and `fact_events` implementing the business logic detailed below.
 - Macro `macros/is_deleted.sql` returning a standardized predicate to filter soft deletes.
 - dbt tests defined in `models/schema_tests.yml`, including a custom data test validating allowed event types.
 - Documentation (`description` fields) for sources and models.
