@@ -7,3 +7,15 @@ USR-005,emily@example.com,IL,2025-05-25T10:05:00Z,Paid,false,2025-06-01T09:30:00
 USR-006,frank@example.com,DE,2025-05-28T07:40:00Z,Organic,true,2025-06-01T09:40:00Z
 USR-007,george@example.com,US,2025-06-02T07:00:00Z,Referral,false,2025-06-02T08:10:00Z
 USR-008,hannah@example.com,,2025-05-10T12:15:00Z,Affiliate,false,2025-06-01T09:50:00Z
+USR-009,isaac@example.com,FR,2025-05-12T08:30:00Z,Paid,false,2025-06-01T10:00:00Z
+USR-010,julia@example.com,AU,2025-05-18T14:20:00Z,Organic,false,2025-06-01T10:10:00Z
+USR-011,kevin@example.com,JP,2025-05-21T06:45:00Z,Affiliate,false,2025-06-01T10:20:00Z
+USR-012,laura@example.com,BR,2025-05-23T16:30:00Z,Referral,false,2025-06-01T10:30:00Z
+USR-013,michael@example.com,MX,2025-05-26T11:15:00Z,Paid,false,2025-06-01T10:40:00Z
+USR-014,nina@example.com,IT,2025-05-27T09:50:00Z,Organic,false,2025-06-01T10:50:00Z
+USR-015,oliver@example.com,ES,2025-05-29T13:25:00Z,Paid,false,2025-06-01T11:00:00Z
+USR-016,patricia@example.com,SE,2025-05-30T10:10:00Z,Referral,false,2025-06-01T11:10:00Z
+USR-017,quinn@example.com,NL,2025-06-01T07:40:00Z,Organic,false,2025-06-01T11:20:00Z
+USR-018,rachel@example.com,CH,2025-06-01T15:55:00Z,Paid,false,2025-06-01T11:30:00Z
+USR-019,steven@example.com,IN,2025-06-02T05:20:00Z,Affiliate,false,2025-06-02T09:00:00Z
+USR-020,tina@example.com,SG,2025-06-02T12:30:00Z,Organic,false,2025-06-02T13:00:00Z
