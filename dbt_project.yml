@@ -2,7 +2,12 @@ name: analytic_engineer_exercise
 version: 1.0.0
 config-version: 2
 
-profile: analytic_engineer_exercise
+profile: default
+
+quoting:
+  database: false
+  schema: false
+  identifier: false
 
 target-path: target
 clean-targets:
@@ -31,5 +36,4 @@ models:
 
 seeds:
   analytic_engineer_exercise:
-    +schema: raw
     +quote_columns: false

@@ -3,8 +3,10 @@ version: 2
 sources:
   - name: raw
     description: "Bronze layer landing tables loaded from CSV extracts."
+    schema: DBT_ETL
     tables:
       - name: events
+        identifier: raw_events
         description: "Raw event stream with semi-structured attributes and soft deletes."
         columns:
           - name: event_id
@@ -16,6 +18,7 @@ sources:
           - name: is_deleted
             description: "Soft delete indicator coming from the source system."
       - name: users
+        identifier: raw_users
         description: "Raw user dimension feed with marketing attributes and soft deletes."
         columns:
           - name: user_id

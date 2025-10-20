@@ -1,0 +1,14 @@
+
+    
+    
+    
+    create table EMPATHY_DATABASE.DBT_ETL.raw_events (event_id text,event_ts timestamp without time zone,user_id text,event_type text,event_attributes text,source_app text,is_deleted boolean,_ingested_at timestamp without time zone)
+  ;
+    -- dbt seed --
+    
+            insert into EMPATHY_DATABASE.DBT_ETL.raw_events (event_id, event_ts, user_id, event_type, event_attributes, source_app, is_deleted, _ingested_at) values
+            (%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s,%s)
+        
+
+;
+  

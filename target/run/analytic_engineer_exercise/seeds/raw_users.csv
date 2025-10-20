@@ -1,0 +1,14 @@
+
+    
+    
+    
+    create table EMPATHY_DATABASE.DBT_ETL.raw_users (user_id text,email text,country_code text,signup_ts timestamp without time zone,marketing_channel text,is_deleted boolean,_ingested_at timestamp without time zone)
+  ;
+    -- dbt seed --
+    
+            insert into EMPATHY_DATABASE.DBT_ETL.raw_users (user_id, email, country_code, signup_ts, marketing_channel, is_deleted, _ingested_at) values
+            (%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s,%s)
+        
+
+;
+  
